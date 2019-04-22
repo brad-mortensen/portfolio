@@ -1,16 +1,48 @@
 body {
   width: 100%;
-  .header {
-    border: 1px solid blueviolet;
-    width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  border: 1px solid blueviolet;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-container {
+  border: 1px solid orange;
+  margin: 0 auto;
+
+  .projects {
+    border: 1px solid brown;
+
+    .projects-header {}
+
+    .projects-container {}
   }
 
-  .main-container {
-    border: 1px solid orange;
-    margin: 0 auto;
+  .skills {
+    border: 1px solid pink;
+
+    .skills-header {}
+
+    .skills-container {}
+
   }
 
-  .footer {
-    border: 1px solid mediumseagreen;
+  .contact {
+    border: 1px solid goldenrod;
+
+    .contact-header {}
+
+    .contact-container {}
+
   }
+}
+
+.footer {
+  border: 1px solid mediumseagreen;
 }
