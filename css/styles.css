@@ -1,0 +1,10 @@
+body {
+  width: 100%; }
+  body .header {
+    border: 1px solid blueviolet;
+    width: 100%; }
+  body .main-container {
+    border: 1px solid orange;
+    margin: 0 auto; }
+  body .footer {
+    border: 1px solid mediumseagreen; }
