@@ -1,9 +1,14 @@
 @mixin section-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centerer;
   font-size: 2rem;
   text-transform: uppercase;
   height: 45px;
   text-align: center;
+  margin-top: 20px;
+}
+
+@mixin centerer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

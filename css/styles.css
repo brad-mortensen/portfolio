@@ -127,6 +127,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   width: 100%;
   margin: 0 auto;
@@ -146,7 +149,7 @@ body {
     color: white;
     text-transform: uppercase;
     font-size: 4rem;
-    font-weight: 700; }
+    font-weight: 500; }
   .header p {
     color: white;
     font-family: "Open Sans", sans-serif;
@@ -167,7 +170,8 @@ body {
       font-size: 2rem;
       text-transform: uppercase;
       height: 45px;
-      text-align: center; }
+      text-align: center;
+      margin-top: 20px; }
   .main-container .skills {
     display: flex;
     justify-content: center;
@@ -180,7 +184,9 @@ body {
       font-size: 2rem;
       text-transform: uppercase;
       height: 45px;
-      text-align: center; }
+      text-align: center;
+      margin-top: 20px;
+      color: white; }
   .main-container .contact {
     display: flex;
     justify-content: center;
@@ -193,8 +199,15 @@ body {
       font-size: 2rem;
       text-transform: uppercase;
       height: 45px;
-      text-align: center; }
+      text-align: center;
+      margin-top: 20px; }
 
 .footer {
-  border: 1px solid mediumseagreen;
-  height: 20vh; }
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer p {
+    color: white;
+    font-size: .8rem;
+    text-transform: uppercase; }
