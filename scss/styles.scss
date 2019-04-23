@@ -13,6 +13,7 @@ body {
   background-color: black;
   box-sizing: border-box;
   font-family: $sans-serif;
+
 }
 
 .header {
@@ -39,6 +40,7 @@ body {
   img {
     width: 10%;
     height: auto;
+    align-self: flex-start;
   }
 }
 
@@ -63,7 +65,7 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
-    background-color: darkslategray;
+    background-color: #2aa091;
 
     .skills-header {
       @include section-header;
@@ -92,6 +94,20 @@ body {
 .footer {
   height: 10vh;
   @include centerer;
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: space-evenly;
+
+  .icon-credit {
+    color: whitesmoke;
+    font-size: .3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: .3rem;
+  }
 
   p {
     color: white;
