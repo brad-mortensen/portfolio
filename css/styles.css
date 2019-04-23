@@ -1,24 +1,40 @@
 body {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: black;
+  box-sizing: border-box; }
 
 .header {
-  border: 1px solid blueviolet;
+  background-color: black;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   height: 100vh; }
+  .header h1 {
+    color: white; }
+  .header p {
+    color: white; }
 
 .main-container {
-  border: 1px solid orange;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: auto; }
   .main-container .projects {
-    border: 1px solid brown; }
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: white; }
   .main-container .skills {
-    border: 1px solid pink; }
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: white; }
   .main-container .contact {
-    border: 1px solid goldenrod; }
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: white; }
 
 .footer {
-  border: 1px solid mediumseagreen; }
+  border: 1px solid mediumseagreen;
+  height: 20vh; }
