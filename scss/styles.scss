@@ -1,8 +1,13 @@
+@import "variables";
+@import "mixins";
+
 body {
   width: 100%;
   margin: 0 auto;
+  font-size: 62.5%;
   background-color: black;
   box-sizing: border-box;
+  font-family: $sans-serif;
 }
 
 .header {
@@ -15,10 +20,13 @@ body {
 
   h1 {
     color: white;
+    text-transform: uppercase;
+    font-size: 4rem;
   }
 
   p {
     color: white;
+    font-family: $serif;
   }
 }
 
@@ -32,7 +40,9 @@ body {
     height: 100vh;
     background-color: white;
 
-    .projects-header {}
+    .projects-header {
+      @include section-header;
+    }
 
     .projects-container {}
   }
@@ -41,9 +51,11 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
-    background-color: white;
+    background-color: darkslategray;
 
-    .skills-header {}
+    .skills-header {
+      @include section-header;
+    }
 
     .skills-container {}
 
@@ -55,7 +67,9 @@ body {
     height: 100vh;
     background-color: white;
 
-    .contact-header {}
+    .contact-header {
+      @include section-header;
+    }
 
     .contact-container {}
 

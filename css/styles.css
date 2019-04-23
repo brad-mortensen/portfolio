@@ -1,8 +1,10 @@
 body {
   width: 100%;
   margin: 0 auto;
+  font-size: 62.5%;
   background-color: black;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif; }
 
 .header {
   background-color: black;
@@ -12,9 +14,12 @@ body {
   justify-content: center;
   height: 100vh; }
   .header h1 {
-    color: white; }
+    color: white;
+    text-transform: uppercase;
+    font-size: 4rem; }
   .header p {
-    color: white; }
+    color: white;
+    font-family: "Open Sans", sans-serif; }
 
 .main-container {
   margin: 0 auto;
@@ -24,16 +29,28 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: white; }
+    .main-container .projects .projects-header {
+      font-size: 1rem;
+      text-transform: uppercase;
+      border: 1px solid red; }
   .main-container .skills {
     display: flex;
     justify-content: center;
     height: 100vh;
-    background-color: white; }
+    background-color: darkslategray; }
+    .main-container .skills .skills-header {
+      font-size: 1rem;
+      text-transform: uppercase;
+      border: 1px solid red; }
   .main-container .contact {
     display: flex;
     justify-content: center;
     height: 100vh;
     background-color: white; }
+    .main-container .contact .contact-header {
+      font-size: 1rem;
+      text-transform: uppercase;
+      border: 1px solid red; }
 
 .footer {
   border: 1px solid mediumseagreen;
