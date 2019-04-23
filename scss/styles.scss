@@ -16,11 +16,11 @@ body {
 }
 
 .header {
-  background-color: black;
+  background-color: lightcoral;
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 100vh;
 
   h1 {
@@ -34,6 +34,11 @@ body {
     color: white;
     font-family: $serif;
     text-transform: uppercase;
+  }
+
+  img {
+    width: 10%;
+    height: auto;
   }
 }
 

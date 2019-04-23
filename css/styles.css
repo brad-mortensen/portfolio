@@ -139,11 +139,11 @@ body {
   font-family: "Josefin Sans", sans-serif; }
 
 .header {
-  background-color: black;
+  background-color: lightcoral;
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 100vh; }
   .header h1 {
     color: white;
@@ -154,6 +154,9 @@ body {
     color: white;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase; }
+  .header img {
+    width: 10%;
+    height: auto; }
 
 .main-container {
   margin: 0 auto;
