@@ -1,3 +1,4 @@
+@import "reset";
 @import "variables";
 @import "mixins";
 
@@ -22,11 +23,13 @@ body {
     color: white;
     text-transform: uppercase;
     font-size: 4rem;
+    font-weight: $bold;
   }
 
   p {
     color: white;
     font-family: $serif;
+    text-transform: uppercase;
   }
 }
 

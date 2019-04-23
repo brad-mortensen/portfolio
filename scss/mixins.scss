@@ -1,5 +1,9 @@
 @mixin section-header {
-  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
   text-transform: uppercase;
-  border: 1px solid red;
+  height: 45px;
+  text-align: center;
 }
