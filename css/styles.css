@@ -192,8 +192,10 @@ body {
         height: auto;
         color: black;
         font-size: 1rem;
-        text-transform: uppercase; }
+        text-transform: lowercase;
+        font-family: "Open Sans", sans-serif; }
         .main-container .projects .projects-container a .gif {
+          margin-top: 7px;
           width: 100%;
           height: auto; }
   .main-container .skills {
