@@ -197,7 +197,12 @@ body {
         .main-container .projects .projects-container a .gif {
           margin-top: 7px;
           width: 100%;
-          height: auto; }
+          height: auto;
+          opacity: 0.5;
+          transition: opacity .5s; }
+          .main-container .projects .projects-container a .gif:hover {
+            opacity: 1;
+            transition: opacity .5s; }
   .main-container .skills {
     display: flex;
     justify-content: center;
