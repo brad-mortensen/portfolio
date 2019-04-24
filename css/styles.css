@@ -88,7 +88,8 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  text-decoration: none; }
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -164,8 +165,8 @@ body {
   height: auto; }
   .main-container .projects {
     display: flex;
-    justify-content: center;
-    height: 100vh;
+    flex-flow: column;
+    height: 33%;
     background-color: white; }
     .main-container .projects .projects-header {
       display: flex;
@@ -176,10 +177,29 @@ body {
       height: 45px;
       text-align: center;
       margin-top: 30px; }
+    .main-container .projects .projects-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+      box-sizing: border-box; }
+      .main-container .projects .projects-container a {
+        margin-top: 30px;
+        padding: 0;
+        width: 45%;
+        height: auto;
+        color: black;
+        font-size: 1rem;
+        text-transform: uppercase; }
+        .main-container .projects .projects-container a .gif {
+          width: 100%;
+          height: auto; }
   .main-container .skills {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     background-color: #2aa091; }
     .main-container .skills .skills-header {
       display: flex;
@@ -194,7 +214,7 @@ body {
   .main-container .contact {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     background-color: white; }
     .main-container .contact .contact-header {
       display: flex;
@@ -218,7 +238,6 @@ body {
     color: whitesmoke;
     font-size: .3rem; }
   .footer a {
-    text-decoration: none;
     color: whitesmoke;
     font-size: .3rem; }
   .footer p {
