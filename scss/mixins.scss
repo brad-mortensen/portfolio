@@ -12,3 +12,19 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+@mixin flex-column-auto {
+  display: flex;
+  flex-flow: column;
+  height: auto;
+}

@@ -166,7 +166,7 @@ body {
   .main-container .projects {
     display: flex;
     flex-flow: column;
-    height: 33%;
+    height: auto;
     background-color: white; }
     .main-container .projects .projects-header {
       display: flex;
@@ -205,7 +205,7 @@ body {
             transition: opacity .5s; }
   .main-container .technologies {
     display: flex;
-    justify-content: center;
+    flex-flow: column;
     height: auto;
     background-color: #2aa091; }
     .main-container .technologies .technologies-header {
@@ -218,9 +218,25 @@ body {
       text-align: center;
       margin-top: 30px;
       color: white; }
+    .main-container .technologies .technologies-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+      box-sizing: border-box; }
+      .main-container .technologies .technologies-container a {
+        margin-top: 30px;
+        padding: 0;
+        width: 10%;
+        height: auto; }
+        .main-container .technologies .technologies-container a img {
+          width: 100%;
+          height: auto; }
   .main-container .contact {
     display: flex;
-    justify-content: center;
+    flex-flow: column;
     height: auto;
     background-color: white; }
     .main-container .contact .contact-header {
@@ -232,6 +248,23 @@ body {
       height: 45px;
       text-align: center;
       margin-top: 30px; }
+    .main-container .contact .contact-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+      box-sizing: border-box;
+      align-items: center; }
+      .main-container .contact .contact-container a {
+        margin-top: 30px;
+        padding: 0;
+        width: 10%;
+        height: auto; }
+        .main-container .contact .contact-container a img {
+          width: 100%;
+          height: auto; }
 
 .footer {
   height: 10vh;
