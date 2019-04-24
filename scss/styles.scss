@@ -98,6 +98,7 @@ body {
     .technologies-container {
       @include container;
       padding-right:10%;
+      align-items: center;
       a {
         margin-top: 50px;
         padding-left: 10%;

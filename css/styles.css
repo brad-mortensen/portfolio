@@ -226,7 +226,8 @@ body {
       height: auto;
       margin-bottom: 50px;
       box-sizing: border-box;
-      padding-right: 10%; }
+      padding-right: 10%;
+      align-items: center; }
       .main-container .technologies .technologies-container a {
         margin-top: 50px;
         padding-left: 10%;
