@@ -94,18 +94,18 @@ body {
     }
   }
 
-  .skills {
+  .technologies {
     display: flex;
     justify-content: center;
     height: auto;
     background-color: #2aa091;
 
-    .skills-header {
+    .technologies-header {
       @include section-header;
       color: white;
     }
 
-    .skills-container {}
+    .technologies-container {}
 
   }
 

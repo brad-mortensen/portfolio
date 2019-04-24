@@ -203,12 +203,12 @@ body {
           .main-container .projects .projects-container a .gif:hover {
             opacity: 1;
             transition: opacity .5s; }
-  .main-container .skills {
+  .main-container .technologies {
     display: flex;
     justify-content: center;
     height: auto;
     background-color: #2aa091; }
-    .main-container .skills .skills-header {
+    .main-container .technologies .technologies-header {
       display: flex;
       justify-content: center;
       align-items: center;
