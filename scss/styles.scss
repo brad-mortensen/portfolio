@@ -46,11 +46,12 @@ body {
 
 .main-container {
   margin: 0 auto;
-  height: auto;
+  height: 300vh;
 
   .projects {
     @include flex-column-auto;
     background-color: white;
+    height: 100vh;
 
     .projects-header {
       @include section-header;
@@ -89,6 +90,7 @@ body {
   .technologies {
     @include flex-column-auto;
     background-color: #2aa091;
+    height: 100vh;
 
     .technologies-header {
       @include section-header;
@@ -117,6 +119,7 @@ body {
   .contact {
     @include flex-column-auto;
     background-color: white;
+    height: 100vh;
 
     .contact-header {
       @include section-header;
