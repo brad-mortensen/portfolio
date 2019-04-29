@@ -46,7 +46,7 @@ body {
 
 .main-container {
   margin: 0 auto;
-  height: 300vh;
+  height: auto;
 
   .projects {
     @include flex-column-auto;
@@ -59,6 +59,7 @@ body {
 
     .projects-container {
       @include container;
+      height: auto;
 
       a {
         margin-top: 50px;
@@ -119,7 +120,7 @@ body {
   .contact {
     @include flex-column-auto;
     background-color: white;
-    height: 100vh;
+    height: auto;
 
     .contact-header {
       @include section-header;
