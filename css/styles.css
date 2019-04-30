@@ -137,7 +137,23 @@ body {
   font-size: 62.5%;
   background-color: black;
   box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 0; }
+
+.scroll-buttons {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  border: 1px solid purple;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between; }
+  .scroll-buttons img {
+    width: 50%;
+    height: auto;
+    align-self: flex-start;
+    z-index: 100;
+    border: 1px solid red; }
 
 .header {
   background-color: lightcoral;
@@ -161,10 +177,6 @@ body {
     color: white;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase; }
-  .header img {
-    width: 10%;
-    height: auto;
-    align-self: flex-start; }
 
 .main-container {
   margin: 0 auto;
