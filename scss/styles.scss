@@ -51,7 +51,8 @@ body {
   .projects {
     @include flex-column-auto;
     background-color: white;
-    height: 100vh;
+    height: auto;
+
 
     .projects-header {
       @include section-header;
@@ -59,7 +60,6 @@ body {
 
     .projects-container {
       @include container;
-      height: auto;
 
       a {
         margin-top: 50px;
@@ -75,7 +75,7 @@ body {
           margin-top: 7px;
           width: 100%;
           height: auto;
-          opacity: 0.5;
+          opacity: 0.7;
           transition: opacity .5s;
 
           &:hover {
@@ -84,14 +84,13 @@ body {
           }
         }
       }
-
     }
   }
 
   .technologies {
     @include flex-column-auto;
     background-color: #2aa091;
-    height: 100vh;
+    height: auto;
 
     .technologies-header {
       @include section-header;
@@ -100,8 +99,9 @@ body {
 
     .technologies-container {
       @include container;
-      padding-right:10%;
+      padding-right: 10%;
       align-items: center;
+
       a {
         margin-top: 50px;
         padding-left: 10%;
@@ -129,6 +129,7 @@ body {
     .contact-container {
       @include container;
       align-items: center;
+
       a {
         margin-top: 50px;
         padding: 0;
@@ -147,7 +148,7 @@ body {
 }
 
 .footer {
-  height: 10vh;
+  height: 100px;
   @include centerer;
   display: flex;
   flex-flow: column-reverse;
