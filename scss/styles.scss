@@ -15,6 +15,7 @@ body {
   font-family: $sans-serif;
   z-index: 0;
 }
+
 .scroll-buttons {
   width: 10%;
   left: 0;
@@ -25,12 +26,16 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   box-sizing: border-box;
+
   img {
     width: 85%;
     height: auto;
     align-self: flex-start;
     z-index: 100;
-    // margin-left: 25%;
+
+    @media (max-width: 700px) {
+      width: 100%;
+    }
   }
 }
 
@@ -45,13 +50,29 @@ body {
   h1 {
     color: white;
     text-transform: uppercase;
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: $semibold;
-    @media (max-width: 630px){
+    width: 86%;
+    transition: font-size .25s;
+
+    @media (max-width: 900px) {
+      font-size: 7rem;
+    }
+
+    @media (max-width: 800px) {
+      font-size: 6rem;
+    }
+
+    @media (max-width: 690px) {
       font-size: 5rem;
     }
-    @media (max-width: 533px){
+
+    @media (max-width: 590px) {
       font-size: 4rem;
+    }
+
+    @media (max-width: 470px) {
+      font-size: 3.5rem;
     }
   }
 
@@ -71,13 +92,13 @@ body {
     background-color: white;
     height: auto;
 
-
     .projects-header {
       @include section-header;
     }
 
     .projects-container {
       @include container;
+      width: 90%;
 
       a {
         margin-top: 50px;
@@ -171,11 +192,6 @@ body {
   display: flex;
   flex-flow: column-reverse;
   justify-content: space-evenly;
-
-  .icon-credit {
-    color: whitesmoke;
-    font-size: .3rem;
-  }
 
   a {
     color: whitesmoke;
