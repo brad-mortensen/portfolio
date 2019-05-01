@@ -308,3 +308,6 @@ body {
     color: white;
     font-size: .8rem;
     text-transform: uppercase; }
+
+.toggler {
+  visibility: hidden; }

@@ -1,14 +1,27 @@
 const upScroller = document.getElementById('up-scroller');
 const downScroller = document.getElementById('down-scroller');
-const nextSection = document.getElementsByClassName('main-container');
+const nextSection = document.getElementById('main-container');
 
+window.addEventListener('load', ()=>{
+	if (window.scrollY==0) {
+		upScroller.classList.add('toggler');
+	}
+});
 downScroller.addEventListener('click', () => {
-	console.log('scroller clicked');
-	nextSection.scrollIntoView({ behavior: 'smooth' });
+	window.scrollBy(0, window.innerHeight);
 });
 upScroller.addEventListener('click', () => {
-	document.body.scrollTop = 0; // For Safari
-	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	window.scrollBy(0, -window.innerHeight);
 });
-
-console.log('da window', window)
+window.onscroll = () => {
+	if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+		downScroller.classList.add('toggler');
+	} else {
+		downScroller.classList.remove('toggler');
+	}
+	if (window.scrollY==0) {
+		upScroller.classList.add('toggler');
+	} else {
+		upScroller.classList.remove('toggler');
+	}
+};
