@@ -2,8 +2,8 @@ const upScroller = document.getElementById('up-scroller');
 const downScroller = document.getElementById('down-scroller');
 const nextSection = document.getElementById('main-container');
 
-window.addEventListener('load', ()=>{
-	if (window.scrollY==0) {
+window.addEventListener('load', () => {
+	if (window.scrollY == 0) {
 		upScroller.classList.add('toggler');
 	}
 });
@@ -19,7 +19,7 @@ window.onscroll = () => {
 	} else {
 		downScroller.classList.remove('toggler');
 	}
-	if (window.scrollY==0) {
+	if (window.scrollY == 0) {
 		upScroller.classList.add('toggler');
 	} else {
 		upScroller.classList.remove('toggler');
