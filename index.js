@@ -1,6 +1,6 @@
-const upScroller = document.getElementById('up-scroller');
-const downScroller = document.getElementById('down-scroller');
-const nextSection = document.getElementById('main-container');
+var upScroller = document.getElementById('up-scroller');
+var downScroller = document.getElementById('down-scroller');
+var nextSection = document.getElementById('main-container');
 
 window.addEventListener('load', () => {
 	if (window.scrollY == 0) {
