@@ -160,7 +160,7 @@ body {
         width: 100%; } }
 
 .header {
-  background: linear-gradient(rgba(5, 2, 38, 0.845), rgba(5, 2, 38, 0.845)), url("../assets/eberhard-grossgasteiger-338314-unsplash.jpg") no-repeat center center;
+  background: linear-gradient(rgba(5, 2, 38, 0.927), rgba(5, 2, 38, 0.927)), url("../assets/eberhard-grossgasteiger-338314-unsplash.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -244,13 +244,20 @@ body {
             color: white;
             font-size: 1rem; }
       .main-container .projects .projects-container .bonafind {
-        background: linear-gradient(rgba(106, 6, 103, 0.845), rgba(106, 6, 103, 0.845)), url("../assets/bonafind.png") no-repeat top center;
+        background: linear-gradient(rgba(106, 6, 103, 0.927), rgba(106, 6, 103, 0.927)), url("../assets/bonafind.png") no-repeat top center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover; }
+        background-size: cover;
+        transition: background 1s; }
+        .main-container .projects .projects-container .bonafind:hover {
+          background: linear-gradient(rgba(106, 6, 103, 0.2), rgba(106, 6, 103, 0.2)), url("../assets/bonafind.png") no-repeat top center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover; }
       .main-container .projects .projects-container .notes-vue {
-        background: linear-gradient(rgba(205, 97, 15, 0.851), rgba(205, 97, 15, 0.851)), url("../assets/vue-notes.png") no-repeat top center;
+        background: linear-gradient(rgba(205, 97, 15, 0.927), rgba(205, 97, 15, 0.927)), url("../assets/vue-notes.png") no-repeat top center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -259,13 +266,13 @@ body {
         width: 45%;
         height: 36vh; }
       .main-container .projects .projects-container .top {
-        background: linear-gradient(rgba(34, 152, 187, 0.838), rgba(34, 152, 187, 0.838)), url("../assets/bonafind.png") no-repeat top center;
+        background: linear-gradient(rgba(34, 152, 187, 0.927), rgba(34, 152, 187, 0.927)), url("../assets/bonafind.png") no-repeat top center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover; }
       .main-container .projects .projects-container .bottom {
-        background: linear-gradient(rgba(201, 24, 11, 0.735), rgba(201, 24, 11, 0.735)), url("../assets/vue-notes.png") no-repeat top center;
+        background: linear-gradient(rgba(201, 24, 11, 0.927), rgba(201, 24, 11, 0.927)), url("../assets/vue-notes.png") no-repeat top center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

@@ -127,6 +127,8 @@ body {
 
       .bonafind {
         @include project-image1;
+        @include img-hover;
+        
       }
 
       .notes-vue {

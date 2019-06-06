@@ -8,49 +8,39 @@
 }
 
 @mixin header-image {
-  background: linear-gradient(rgba(5, 2, 38, 0.845),
-      rgba(5, 2, 38, 0.845)), url($header) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: linear-gradient(rgba(5, 2, 38, 0.927),
+      rgba(5, 2, 38, 0.927)), url($header) no-repeat center center;
+  @include cover;
+
 
 }
 
 @mixin project-image1 {
-  background: linear-gradient(rgba(106, 6, 103, 0.845),
-      rgba(106, 6, 103, 0.845)), url($bonafind) no-repeat top center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: linear-gradient(rgba(106, 6, 103, 0.927),
+      rgba(106, 6, 103, 0.927)), url($bonafind) no-repeat top center;
+  @include cover;  
+  transition: background 1s;
 }
 
 @mixin project-image2 {
-  background: linear-gradient(rgba(205, 97, 15, 0.851),
-      rgba(205, 97, 15, 0.851)), url($vue-notes) no-repeat top center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: linear-gradient(rgba(205, 97, 15, 0.927),
+      rgba(205, 97, 15, 0.927)), url($vue-notes) no-repeat top center;
+  @include cover;
+
 }
 
 @mixin description1 {
-  background: linear-gradient(rgba(34, 152, 187, 0.838),
-      rgba(34, 152, 187, 0.838)), url($bonafind) no-repeat top center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: linear-gradient(rgba(34, 152, 187, 0.927),
+      rgba(34, 152, 187, 0.927)), url($bonafind) no-repeat top center;
+  @include cover;
+
 }
 
 @mixin description2 {
-  background: linear-gradient(rgba(201, 24, 11, 0.735),
-      rgba(201, 24, 11, 0.735)), url($vue-notes) no-repeat top center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: linear-gradient(rgba(201, 24, 11, 0.927),
+      rgba(201, 24, 11, 0.927)), url($vue-notes) no-repeat top center;
+  @include cover;
+
 }
 
 @mixin centerer {
@@ -68,9 +58,24 @@
   box-sizing: border-box;
 }
 
+@mixin img-hover {
+  &:hover {
+    background: linear-gradient(rgba(106, 6, 103, 0.2),
+        rgba(106, 6, 103, 0.2)), url($bonafind) no-repeat top center;
+    @include cover;
+  }
+}
+
 @mixin flex-column-auto {
   display: flex;
   flex-flow: column;
   align-items: center;
   height: auto;
+}
+
+@mixin cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
