@@ -7,6 +7,52 @@
   margin-top: 30px;
 }
 
+@mixin header-image {
+  background: linear-gradient(rgba(5, 2, 38, 0.845),
+      rgba(5, 2, 38, 0.845)), url($header) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+@mixin project-image1 {
+  background: linear-gradient(rgba(106, 6, 103, 0.845),
+      rgba(106, 6, 103, 0.845)), url($bonafind) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin project-image2 {
+  background: linear-gradient(rgba(205, 97, 15, 0.851),
+      rgba(205, 97, 15, 0.851)), url($vue-notes) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin description1 {
+  background: linear-gradient(rgba(34, 152, 187, 0.838),
+      rgba(34, 152, 187, 0.838)), url($bonafind) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin description2 {
+  background: linear-gradient(rgba(201, 24, 11, 0.735),
+      rgba(201, 24, 11, 0.735)), url($vue-notes) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 @mixin centerer {
   display: flex;
   justify-content: center;
@@ -16,10 +62,9 @@
 @mixin container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
   width: 100%;
   height: auto;
-  padding-bottom: 50px;
   box-sizing: border-box;
 }
 

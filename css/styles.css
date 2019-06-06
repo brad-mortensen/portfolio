@@ -160,19 +160,24 @@ body {
         width: 100%; } }
 
 .header {
-  background-color: lightcoral;
+  background: linear-gradient(rgba(5, 2, 38, 0.845), rgba(5, 2, 38, 0.845)), url("../assets/eberhard-grossgasteiger-338314-unsplash.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 100vh; }
+  height: 80vh; }
   .header h1 {
     color: white;
     text-transform: uppercase;
     font-size: 8rem;
     font-weight: 500;
     width: 86%;
-    transition: font-size .25s; }
+    transition: font-size .25s;
+    border-bottom: 2px solid white; }
     @media (max-width: 900px) {
       .header h1 {
         font-size: 7rem; } }
@@ -192,8 +197,7 @@ body {
     color: white;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
-    font-size: 1.5rem;
-    color: black; }
+    font-size: 1.5rem; }
 
 .main-container {
   margin: 0 auto;
@@ -203,7 +207,6 @@ body {
     flex-flow: column;
     align-items: center;
     height: auto;
-    background-color: white;
     height: auto; }
     .main-container .projects .projects-header {
       display: flex;
@@ -217,30 +220,56 @@ body {
     .main-container .projects .projects-container {
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-evenly;
       width: 100%;
       height: auto;
-      padding-bottom: 50px;
       box-sizing: border-box;
-      width: 90%; }
-      .main-container .projects .projects-container a {
-        margin-top: 50px;
-        padding: 0;
+      width: 100%; }
+      .main-container .projects .projects-container .img-container {
+        width: 55%;
+        height: 36vh; }
+        .main-container .projects .projects-container .img-container .inner-text {
+          height: 100%;
+          width: 40%;
+          padding-left: 20px;
+          display: flex;
+          flex-flow: column;
+          justify-content: center; }
+          .main-container .projects .projects-container .img-container .inner-text .inner-header {
+            color: white;
+            font-size: 2rem;
+            padding-bottom: 15px;
+            border-bottom: 1px solid white; }
+          .main-container .projects .projects-container .img-container .inner-text .inner-description {
+            padding-top: 15px;
+            color: white;
+            font-size: 1rem; }
+      .main-container .projects .projects-container .bonafind {
+        background: linear-gradient(rgba(106, 6, 103, 0.845), rgba(106, 6, 103, 0.845)), url("../assets/bonafind.png") no-repeat top center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .main-container .projects .projects-container .notes-vue {
+        background: linear-gradient(rgba(205, 97, 15, 0.851), rgba(205, 97, 15, 0.851)), url("../assets/vue-notes.png") no-repeat top center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .main-container .projects .projects-container .description {
         width: 45%;
-        height: auto;
-        color: black;
-        font-size: 1rem;
-        text-transform: lowercase;
-        font-family: "Open Sans", sans-serif; }
-        .main-container .projects .projects-container a .gif {
-          margin-top: 7px;
-          width: 100%;
-          height: auto;
-          opacity: 0.7;
-          transition: opacity .5s; }
-          .main-container .projects .projects-container a .gif:hover {
-            opacity: 1;
-            transition: opacity .5s; }
+        height: 36vh; }
+      .main-container .projects .projects-container .top {
+        background: linear-gradient(rgba(34, 152, 187, 0.838), rgba(34, 152, 187, 0.838)), url("../assets/bonafind.png") no-repeat top center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .main-container .projects .projects-container .bottom {
+        background: linear-gradient(rgba(201, 24, 11, 0.735), rgba(201, 24, 11, 0.735)), url("../assets/vue-notes.png") no-repeat top center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
   .main-container .technologies {
     display: flex;
     flex-flow: column;
@@ -261,10 +290,8 @@ body {
     .main-container .technologies .technologies-container {
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-evenly;
       width: 100%;
       height: auto;
-      padding-bottom: 50px;
       box-sizing: border-box;
       padding-right: 10%;
       align-items: center; }
@@ -295,10 +322,8 @@ body {
     .main-container .contact .contact-container {
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-evenly;
       width: 100%;
       height: auto;
-      padding-bottom: 50px;
       box-sizing: border-box;
       align-items: center; }
       .main-container .contact .contact-container a {
