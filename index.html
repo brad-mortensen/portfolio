@@ -14,26 +14,33 @@
 </head>
 
 <body>
-  <div class="scroll-buttons">
+  <!-- <div class="scroll-buttons">
     <img id="up-scroller" src="assets/angle-double-up.svg" alt="scroll-arrow" />
     <img id="down-scroller" src="assets/angle-double-down.svg" alt="scroll-arrow" />
-  </div>
+  </div> -->
   <div class="header">
     <h1 class="main-header">Brad Mortensen</h1>
     <p class="intro">Software Developer</p>
+    <div class="overlay"></div>
   </div>
   <div class="main-container" id="main-container">
     <div class="projects">
-      <h2 class="projects-header">Projects</h2>
+      <!-- <h2 class="projects-header">Projects</h2> -->
       <div class="projects-container">
-        <a href="https://bonafind.netlify.com/" target="_blank">Bonafind<img class="gif bonafind"
-            src="https://media.giphy.com/media/nqCQmp53eEC70dLsFL/giphy.gif" /></a>
-        <a href="https://notes-vue.herokuapp.com/" target="_blank">Lambda Notes<img class="gif notes-vue"
-            src="https://media.giphy.com/media/LpRByBHOfpAUEwUYBp/giphy.gif" /></a>
-        <a href="https://notes-vue.herokuapp.com/" target="_blank">Lambda Notes<img class="gif notes-vue"
-            src="https://media.giphy.com/media/LpRByBHOfpAUEwUYBp/giphy.gif" /></a>
-        <a href="https://bonafind.netlify.com/" target="_blank">Bonafind<img class="gif bonafind"
-            src="https://media.giphy.com/media/nqCQmp53eEC70dLsFL/giphy.gif" /></a>
+        <div class="description top"></div>
+        <div class="img-container bonafind">
+          <div class="inner-text">
+            <h4 class="inner-header">Bonafind</h4>
+            <p class="inner-description">Business Reviews App</p>
+          </div>
+        </div>
+        <div class="img-container notes-vue">
+          <div class="inner-text">
+            <h4 class="inner-header">Vue Notes</h4>
+            <p class="inner-description">Built with Vue.js</p>
+          </div>
+        </div>
+        <div class="description bottom"></div>
       </div>
       <div class="technologies">
         <h2 class="technologies-header">Technologies</h2>
