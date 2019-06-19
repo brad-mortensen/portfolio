@@ -202,122 +202,127 @@ body {
 .main-container {
   margin: 0 auto;
   height: auto; }
-  .main-container .projects {
+  .main-container .projects-container {
     display: flex;
-    flex-flow: column;
-    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
     height: auto;
-    height: auto; }
-    .main-container .projects .projects-header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2rem;
-      text-transform: uppercase;
-      height: 45px;
-      text-align: center;
-      margin-top: 30px; }
-    .main-container .projects .projects-container {
-      display: flex;
-      flex-flow: row wrap;
-      width: 100%;
-      height: auto;
-      box-sizing: border-box;
-      width: 100%; }
-      .main-container .projects .projects-container .img-container {
-        width: 55%;
-        height: 36vh; }
-        .main-container .projects .projects-container .img-container .inner-text {
-          height: 100%;
-          width: 40%;
-          padding-left: 20px;
-          display: flex;
-          flex-flow: column;
-          justify-content: center; }
-          .main-container .projects .projects-container .img-container .inner-text .inner-header {
-            color: white;
-            font-size: 2rem;
-            padding-bottom: 15px;
-            border-bottom: 1px solid white; }
-          .main-container .projects .projects-container .img-container .inner-text .inner-description {
-            padding-top: 15px;
-            color: white;
-            font-size: 1rem; }
-      .main-container .projects .projects-container .bonafind {
-        background: linear-gradient(rgba(106, 6, 103, 0.927), rgba(106, 6, 103, 0.927)), url("../assets/bonafind.png") no-repeat top center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        transition: background 1s; }
-        .main-container .projects .projects-container .bonafind:hover {
-          background: linear-gradient(rgba(106, 6, 103, 0.2), rgba(106, 6, 103, 0.2)), url("../assets/bonafind.png") no-repeat top center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover; }
-      .main-container .projects .projects-container .notes-vue {
-        background: linear-gradient(rgba(205, 97, 15, 0.927), rgba(205, 97, 15, 0.927)), url("../assets/vue-notes.png") no-repeat top center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover; }
-      .main-container .projects .projects-container .description {
-        width: 45%;
-        height: 36vh; }
-      .main-container .projects .projects-container .top {
-        background: linear-gradient(rgba(34, 152, 187, 0.927), rgba(34, 152, 187, 0.927)), url("../assets/bonafind.png") no-repeat top center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover; }
-      .main-container .projects .projects-container .bottom {
-        background: linear-gradient(rgba(201, 24, 11, 0.927), rgba(201, 24, 11, 0.927)), url("../assets/vue-notes.png") no-repeat top center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover; }
-  .main-container .technologies {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    height: auto;
-    background-color: #2aa091;
-    height: auto; }
-    .main-container .technologies .technologies-header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2rem;
-      text-transform: uppercase;
-      height: 45px;
-      text-align: center;
-      margin-top: 30px;
-      color: white; }
-    .main-container .technologies .technologies-container {
-      display: flex;
-      flex-flow: row wrap;
-      width: 100%;
-      height: auto;
-      box-sizing: border-box;
-      padding-right: 10%;
-      align-items: center; }
-      .main-container .technologies .technologies-container a {
-        margin-top: 50px;
+    box-sizing: border-box;
+    width: 100%; }
+    .main-container .projects-container .img-container {
+      height: 36vh;
+      position: relative;
+      z-index: 10; }
+      .main-container .projects-container .img-container .img-text {
+        width: 100%;
+        height: 100%;
         padding-left: 10%;
-        width: 10%;
+        z-index: 30;
+        position: relative;
+        opacity: .9;
+        transition: opacity .5s;
+        display: flex;
+        flex-flow: column;
+        justify-content: center; }
+        .main-container .projects-container .img-container .img-text:hover {
+          opacity: 0.0; }
+        .main-container .projects-container .img-container .img-text .inner-header {
+          width: 30%;
+          color: white;
+          font-size: 2rem;
+          padding-bottom: 15px;
+          border-bottom: 2px solid white;
+          z-index: 40;
+          position: relative;
+          opacity: 1; }
+        .main-container .projects-container .img-container .img-text .inner-description {
+          text-transform: uppercase;
+          padding-top: 15px;
+          color: white;
+          font-size: .8rem;
+          letter-spacing: 1px;
+          z-index: 40;
+          position: relative;
+          opacity: 1; }
+    .main-container .projects-container .a {
+      width: 55%; }
+    .main-container .projects-container .b {
+      width: 45%; }
+    .main-container .projects-container .bonafind {
+      background: url("../assets/bonafind.png") no-repeat top center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .main-container .projects-container .notes-vue {
+      background: url("../assets/vue-notes.png") no-repeat top center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .main-container .projects-container .django-blog {
+      background: url("../assets/django-blog.png") no-repeat top center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .main-container .projects-container .description {
+      width: 45%;
+      height: 36vh; }
+    .main-container .projects-container .top {
+      background: url("../assets/bonafind.png") no-repeat top center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .main-container .projects-container .bottom {
+      background: url("../assets/vue-notes.png") no-repeat top center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+
+.technologies {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: auto;
+  background-color: #2aa091;
+  height: auto; }
+  .technologies .technologies-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    height: 45px;
+    text-align: center;
+    margin-top: 30px;
+    color: white; }
+  .technologies .technologies-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-right: 10%;
+    align-items: center; }
+    .technologies .technologies-container a {
+      margin-top: 50px;
+      padding-left: 10%;
+      width: 10%;
+      height: auto; }
+      .technologies .technologies-container a img {
+        width: 100%;
         height: auto; }
-        .main-container .technologies .technologies-container a img {
-          width: 100%;
-          height: auto; }
-  .main-container .contact {
+  .technologies .contact {
     display: flex;
     flex-flow: column;
     align-items: center;
     height: auto;
     background-color: white;
     height: auto; }
-    .main-container .contact .contact-header {
+    .technologies .contact .contact-header {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -326,19 +331,19 @@ body {
       height: 45px;
       text-align: center;
       margin-top: 30px; }
-    .main-container .contact .contact-container {
+    .technologies .contact .contact-container {
       display: flex;
       flex-flow: row wrap;
       width: 100%;
       height: auto;
       box-sizing: border-box;
       align-items: center; }
-      .main-container .contact .contact-container a {
+      .technologies .contact .contact-container a {
         margin-top: 50px;
         padding: 0;
         width: 10%;
         height: auto; }
-        .main-container .contact .contact-container a img {
+        .technologies .contact .contact-container a img {
           width: 100%;
           height: auto; }
 
@@ -360,3 +365,15 @@ body {
 
 .toggler {
   visibility: hidden; }
+
+.blue {
+  background-color: navy; }
+
+.purple {
+  background-color: purple; }
+
+.red {
+  background-color: red; }
+
+.orange {
+  background-color: orange; }

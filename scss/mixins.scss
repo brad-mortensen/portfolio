@@ -16,29 +16,31 @@
 }
 
 @mixin project-image1 {
-  background: linear-gradient(rgba(106, 6, 103, 0.927),
-      rgba(106, 6, 103, 0.927)), url($bonafind) no-repeat top center;
-  @include cover;  
-  transition: background 1s;
+  background: url($bonafind) no-repeat top center;
+  @include cover;
+  // transition: background 1s;
 }
 
 @mixin project-image2 {
-  background: linear-gradient(rgba(205, 97, 15, 0.927),
-      rgba(205, 97, 15, 0.927)), url($vue-notes) no-repeat top center;
+  background: url($vue-notes) no-repeat top center;
+  @include cover;
+
+}
+
+@mixin project-image3 {
+  background: url($django-blog) no-repeat top center;
   @include cover;
 
 }
 
 @mixin description1 {
-  background: linear-gradient(rgba(34, 152, 187, 0.927),
-      rgba(34, 152, 187, 0.927)), url($bonafind) no-repeat top center;
+  background: url($bonafind) no-repeat top center;
   @include cover;
 
 }
 
 @mixin description2 {
-  background: linear-gradient(rgba(201, 24, 11, 0.927),
-      rgba(201, 24, 11, 0.927)), url($vue-notes) no-repeat top center;
+  background: url($vue-notes) no-repeat top center;
   @include cover;
 
 }
