@@ -14,30 +14,9 @@ body {
   box-sizing: border-box;
   font-family: $sans-serif;
   z-index: 0;
+  overflow: hidden;
 }
 
-.scroll-buttons {
-  width: 10%;
-  left: 0;
-  height: 100vh;
-  position: fixed;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: flex-end;
-  box-sizing: border-box;
-
-  img {
-    width: 85%;
-    height: auto;
-    align-self: flex-start;
-    z-index: 100;
-
-    @media (max-width: 700px) {
-      width: 100%;
-    }
-  }
-}
 
 .header {
   @include header-image;
@@ -46,15 +25,20 @@ body {
   align-items: center;
   justify-content: space-evenly;
   height: 80vh;
+  box-sizing: border-box;
 
   h1 {
-    color: white;
+    color: black;
     text-transform: uppercase;
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: $semibold;
-    width: 86%;
+    width: 100%;
+    height: 50%;
     transition: font-size .25s;
-    border-bottom: 2px solid white;
+    border-bottom: 5px solid black;
+    display:flex;
+    align-items: center;
+    transform: skewY(-10deg);
 
     @media (max-width: 900px) {
       font-size: 7rem;
@@ -78,10 +62,15 @@ body {
   }
 
   p {
+    background-color:black;
+    width: 150%;
+    height: 0%;
     color: white;
-    font-family: $sans-serif2;
+    font-family: $serif;
     text-transform: uppercase;
     font-size: 1.5rem;
+    transform: skewY(-10deg);
+
   }
 }
 
@@ -94,7 +83,7 @@ body {
     width: 100%;
 
     .img-container {
-      height: 36vh;
+      height: 50vh;
       position: relative;
       z-index: 10;
 

@@ -8,11 +8,7 @@
 }
 
 @mixin header-image {
-  background: linear-gradient(rgba(5, 2, 38, 0.927),
-      rgba(5, 2, 38, 0.927)), url($header) no-repeat center center;
-  @include cover;
-
-
+  background-color: yellow;
 }
 
 @mixin project-image1 {
